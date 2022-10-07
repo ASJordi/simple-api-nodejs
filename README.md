@@ -21,7 +21,7 @@
     <a href="https://github.com/ASJordi/simple-api-nodejs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://api-words.up.railway.app/">View Demo</a>
     ·
     <a href="https://github.com/ASJordi/simple-api-nodejs/issues">Report Bug</a>
     ·
@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://weather-app-nodejs.netlify.app)
+[![Product Name Screen Shot][product-screenshot]](https://api-words.up.railway.app)
 
 REST API with Node.js and Express. Get a list of nouns, verbs, adverbs and adjectives that start or end with a set of characters. The backend of the application was deployed on Railway.
 ### Built With
@@ -109,43 +109,43 @@ _This section describes the application installation and configuration process f
 ## Usage
 This API is GET only and no authentication is required to access it.
 
-**Base URL:** http://localhost:3000
+**Base URL:** https://api-words.up.railway.app
 
 ### Endpoints
 
 #### Get all nouns
 
 ```http
-  http://localhost:3000/nouns
+  https://api-words.up.railway.app/nouns
 ```
 
 #### Get all verbs
 
 ```http
-  http://localhost:3000/verbs
+  https://api-words.up.railway.app/verbs
 ```
 #### Get all adjectives
 
 ```http
-  http://localhost:3000/adjectives
+  https://api-words.up.railway.app/adjectives
 ```
 
 #### Get all adverbs
 
 ```http
-  http://localhost:3000/adverbs
+  https://api-words.up.railway.app/adverbs
 ```
 
 #### Get all nouns, verbs, adjectives and verbs that start and end with a set of characters
 
 ```http
-  http://localhost:3000/nouns?start=e&end=t
+  https://api-words.up.railway.app/nouns?start=e&end=t
 ```
 
 #### Get all nouns, verbs, adjectives and verbs and set the number of results
 
 ```http
-  http://localhost:3000/nouns?start=e&end=t&limit=5
+  https://api-words.up.railway.app/nouns?start=e&end=t&limit=5
 ```
 
 <!-- CONTRIBUTING -->
