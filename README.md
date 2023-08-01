@@ -21,7 +21,7 @@
     <a href="https://github.com/ASJordi/simple-api-nodejs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://api-words.up.railway.app/">View Demo</a>
+    <a href="https://simple-api-words.onrender.com/">View Demo</a>
     ·
     <a href="https://github.com/ASJordi/simple-api-nodejs/issues">Report Bug</a>
     ·
@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://api-words.up.railway.app)
+[![Product Name Screen Shot][product-screenshot]](https://simple-api-words.onrender.com/)
 
 REST API with Node.js and Express. Get a list of nouns, verbs, adverbs and adjectives that start or end with a set of characters. The backend of the application was deployed on Railway.
 ### Built With
@@ -95,7 +95,7 @@ _This section describes the application installation and configuration process f
    ```JS
    // .env file
    PORT = 3000
-    ``` 
+    ```
 4. Run the server
    ```sh
    npm run dev
@@ -104,48 +104,48 @@ _This section describes the application installation and configuration process f
    ```sh
     http://localhost:3000
     ```
-  
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 This API is GET only and no authentication is required to access it.
 
-**Base URL:** https://api-words.up.railway.app
+**Base URL:** https://simple-api-words.onrender.com
 
 ### Endpoints
 
 #### Get all nouns
 
 ```http
-  https://api-words.up.railway.app/nouns
+  https://simple-api-words.onrender.com/nouns
 ```
 
 #### Get all verbs
 
 ```http
-  https://api-words.up.railway.app/verbs
+  https://simple-api-words.onrender.com/verbs
 ```
 #### Get all adjectives
 
 ```http
-  https://api-words.up.railway.app/adjectives
+  https://simple-api-words.onrender.com/adjectives
 ```
 
 #### Get all adverbs
 
 ```http
-  https://api-words.up.railway.app/adverbs
+  https://simple-api-words.onrender.com/adverbs
 ```
 
 #### Get all nouns, verbs, adjectives and verbs that start and end with a set of characters
 
 ```http
-  https://api-words.up.railway.app/nouns?start=e&end=t
+  https://simple-api-words.onrender.com/nouns?start=e&end=t
 ```
 
 #### Get all nouns, verbs, adjectives and verbs and set the number of results
 
 ```http
-  https://api-words.up.railway.app/nouns?start=e&end=t&limit=5
+  https://simple-api-words.onrender.com/nouns?start=e&end=t&limit=5
 ```
 
 <!-- CONTRIBUTING -->
