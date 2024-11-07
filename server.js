@@ -3,7 +3,7 @@ const cors = require("cors");
 const fs = require("fs");
 
 const port = process.env.PORT || 3000;
-const whiteList = "http://localhost:5000";
+const whiteList = "*";
 const VOCABULARY = __dirname + "/vocabulary/";
 
 app = express();
