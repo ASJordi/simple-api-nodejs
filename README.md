@@ -21,7 +21,7 @@
     <a href="https://github.com/ASJordi/simple-api-nodejs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://simple-api-words.onrender.com/">View Demo</a>
+    <a href="https://words.asjordi.dev/">View Demo</a>
     ·
     <a href="https://github.com/ASJordi/simple-api-nodejs/issues">Report Bug</a>
     ·
@@ -56,9 +56,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://simple-api-words.onrender.com/)
+[![Product Name Screen Shot][product-screenshot]](https://words.asjordi.dev/)
 
-REST API with Node.js and Express. Get a list of nouns, verbs, adverbs and adjectives that start or end with a set of characters. The backend of the application was deployed on Railway.
+REST API with Node.js and Express. Get a list of nouns, verbs, adverbs and adjectives that start or end with a set of characters. The backend of the application was deployed on my personal server using Docker.
 ### Built With
 
 * JavaScript
@@ -109,43 +109,43 @@ _This section describes the application installation and configuration process f
 ## Usage
 This API is GET only and no authentication is required to access it.
 
-**Base URL:** https://simple-api-words.onrender.com
+**Base URL:** https://words.asjordi.dev
 
 ### Endpoints
 
 #### Get all nouns
 
 ```http
-  https://simple-api-words.onrender.com/nouns
+  https://words.asjordi.dev/nouns
 ```
 
 #### Get all verbs
 
 ```http
-  https://simple-api-words.onrender.com/verbs
+  https://words.asjordi.dev/verbs
 ```
 #### Get all adjectives
 
 ```http
-  https://simple-api-words.onrender.com/adjectives
+  https://words.asjordi.dev/adjectives
 ```
 
 #### Get all adverbs
 
 ```http
-  https://simple-api-words.onrender.com/adverbs
+  https://words.asjordi.dev/adverbs
 ```
 
 #### Get all nouns, verbs, adjectives and verbs that start and end with a set of characters
 
 ```http
-  https://simple-api-words.onrender.com/nouns?start=e&end=t
+  https://words.asjordi.dev/nouns?start=e&end=t
 ```
 
 #### Get all nouns, verbs, adjectives and verbs and set the number of results
 
 ```http
-  https://simple-api-words.onrender.com/nouns?start=e&end=t&limit=5
+  https://words.asjordi.dev/nouns?start=e&end=t&limit=5
 ```
 
 <!-- CONTRIBUTING -->
