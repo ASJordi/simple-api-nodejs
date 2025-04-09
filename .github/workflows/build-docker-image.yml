@@ -28,7 +28,7 @@ jobs:
     with:
       image_name: simple-api-nodejs
       dockerfile_path: ./Dockerfile
-      context: simple-api-nodejs
+      context: .
 
   build-and-push-image:
 
