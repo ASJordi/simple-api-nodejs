@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*.*.*'
 
 env:
   REGISTRY: ghcr.io
@@ -63,10 +65,11 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=sha
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
             type=ref,event=branch
             type=ref,event=pr
-            type=semver,pattern={{version}}
+            type=sha
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
 
       # This step uses the [docker/build-push-action](https://github.com/docker/build-push-action) action to build the image, based on your repository's `Dockerfile`. If the build succeeds, it pushes the image to GitHub Packages.
@@ -82,7 +85,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           outputs: type=registry
-          cache-from: type=registry,ref=user/app:latest
+          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           cache-to: type=inline
 
       # This step generates an artifact attestation for the image, which is an unforgettable statement about where and how it was built. It increases supply chain security for people who consume the image. For more information, see [actions/attest-build-provenance@v2](https://github.com/actions/attest-build-provenance)
