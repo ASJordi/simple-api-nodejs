@@ -42,6 +42,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#docker">Docker</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -67,6 +68,25 @@ REST API with Node.js and Express. Get a list of nouns, verbs, adverbs and adjec
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
+### Docker
+
+This project is available as a Docker image.
+
+1. Build the image
+```sh
+docker build -t simple-api-nodejs .
+```
+2. Run the container
+```sh
+docker container run -dp 3000:3000 simple-api-nodejs
+```
+
+You can also run the container without building the image first. This will download the image from GitHub and run it.
+
+```sh
+docker container run -p 3000:3000 ghcr.io/asjordi/simple-api-nodejs:latest
+```
 
 To get a local copy up and running follow these simple example steps.
 
